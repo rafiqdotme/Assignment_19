@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('postTitle', 50)->nullable()->unique();
+            $table->string('postTitle', 200)->nullable()->unique();
+            $table->string('postSlug', 200)->nullable()->unique();
+            $table->string('postImg', 200)->nullable();
             $table->text('postDesc')->nullable();
-            $table->string('postImg1', 200)->nullable();
-            $table->string('postImg2', 200)->nullable();
 
             $table->unsignedBigInteger('catId');
             $table->unsignedBigInteger('userId');

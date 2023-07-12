@@ -18,9 +18,11 @@ return new class extends Migration
             $table->string('email', 50)->unique()->nullable();
             $table->string('password', 50)->nullable();
             $table->string('otp', 10)->nullable();
+            $table->string('userImg', 200)->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
+
     }
 
     /**

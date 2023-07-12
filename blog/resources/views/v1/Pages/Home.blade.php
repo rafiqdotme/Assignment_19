@@ -5,14 +5,7 @@
 
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">
-    <nav>
-        <div class="container">
-            <ol>
-                <li><a href="{{ asset('/') }}">Home</a></li>
-                <li>Blog</li>
-            </ol>
-        </div>
-    </nav>
+    @include('v1.Component.Breadcrumbs')
 </div>
 <!-- End Breadcrumbs -->
 
@@ -20,7 +13,7 @@
 <section id="blog" class="blog">
     <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4 posts-list">
+        <div id="postList" class="row gy-4 posts-list">
 
             <div class="col-xl-4 col-md-6">
                 <article>
@@ -181,11 +174,7 @@
         </div><!-- End blog posts list -->
 
         <div class="blog-pagination">
-            <ul class="justify-content-center">
-                <li><a href="#">1</a></li>
-                <li class="active"><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-            </ul>
+            @include('v1.Component.BlogPagination')
         </div><!-- End blog pagination -->
 
     </div>

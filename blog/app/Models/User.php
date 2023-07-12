@@ -7,8 +7,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    protected $fillable = ['fName', 'lName', 'email', 'password', 'otp'];
+    protected $fillable = ['fName', 'lName', 'email', 'password', 'otp', 'userImg'];
     protected $attributes = [
         'otp'   =>'0'
     ];
+
 }

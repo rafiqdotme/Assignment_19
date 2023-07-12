@@ -14,3 +14,6 @@ Route::post('/UserLogin', [UserController::class, 'UserLogin']);
 Route::get('/single', [SingleController::class, 'SinglePage']);
 Route::get('/GetSinglePost', [SingleController::class, 'GetSinglePost']);
 
+
+Route::get('/GetPosts', [HomeController::class, 'GetPosts']);
+
