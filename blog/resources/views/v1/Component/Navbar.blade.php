@@ -7,6 +7,8 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="{{ asset('/') }}">Home</a></li>
+                <li><a href="{{ asset('/register') }}">Registration</a></li>
+                <li><a href="{{ asset('/login') }}">Login</a></li>
                 <li><a href="{{ asset('/about') }}">About</a></li>
                 <li><a href="{{ asset('/contact') }}">Contact</a></li>
             </ul>
