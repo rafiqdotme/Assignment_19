@@ -14,6 +14,6 @@ class HomeController extends Controller
     }
 
     function GetPosts(){
-        return Category::with('post')->get();
+        return Post::with('user', 'category')->get();
     }
 }

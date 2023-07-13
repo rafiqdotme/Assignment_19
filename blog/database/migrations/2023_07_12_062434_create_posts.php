@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string('postImg', 200)->nullable();
             $table->text('postDesc')->nullable();
 
-            $table->unsignedBigInteger('catId');
-            $table->unsignedBigInteger('userId');
+            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('user_id');
 
             // Relation
-            $table->foreign('catId')
+            $table->foreign('category_id')
                 ->references('id')
                 ->on('categories')
                 ->restrictOnDelete()
@@ -30,7 +30,7 @@ return new class extends Migration
 
 
             // Relation
-            $table->foreign('userId')
+            $table->foreign('user_id')
                 ->references('id')
                 ->on('users')
                 ->restrictOnDelete()

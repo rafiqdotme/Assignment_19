@@ -11,5 +11,4 @@ class User extends Authenticatable
     protected $attributes = [
         'otp'   =>'0'
     ];
-
 }
